@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,11 +32,15 @@ Route::get('/gallery', function () {
     ]);
 });
 
-Route::get('/news', function () {
-    return view('news',[
-        "title" => "Berita Acara - UKM Korps Protokoler Mahasiswa Universitas Islam Malang"
-    ]);
-});
+// Sort Data All News
+Route::get('/news',[NewsController::class,'index']);
+
+// Route Single News
+Route::get('/news/{news:slug}',[NewsController::class,'show']);
+
+
+
+// Admin Section
 
 Route::get('/admin',function(){
     return view('admin.dashboard');

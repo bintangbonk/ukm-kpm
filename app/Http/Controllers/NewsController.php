@@ -12,7 +12,10 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        return view('news',[
+            "title" => "Berita Acara - UKM Korps Protokoler Mahasiswa Universitas Islam Malang",
+            "newss" => News::latest()->paginate(4)->withQueryString()
+        ]);
     }
 
     /**
@@ -36,7 +39,10 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        return view('newsSingle',[
+            "title" => $news->title,
+            "news" => $news
+        ]);
     }
 
     /**

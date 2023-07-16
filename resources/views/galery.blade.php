@@ -9,7 +9,7 @@
         <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
             <button type="button"
                 class="text-white hover:text-batik dark:hover:text-almet border border-batik dark:border-almet  bg-batik dark:bg-almet hover:bg-white focus:ring-4 focus:outline-none focus:ring-orange-300 dark:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3  dark:text-white dark:hover:bg-white  dark:focus:ring-blue-300">All
-                categories</button>
+                Kategori</button>
             <button type="button"
                 class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Shoes</button>
 

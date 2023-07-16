@@ -11,50 +11,30 @@
                 <section class="mb-32 text-gray-800 md:text-left">
                     <h2 class="text-3xl font-bold mb-12 text-center">Berita Acara</h2>
                     <!-- Card Content -->
-                    <div class="flex flex-wrap mb-6">
-                        <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                                <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" class="w-full" alt="Louvre" />
-                                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                            </div>
-                        </div>
-
-                        <div class="grow-0 shrink-0 basis-auto w-full md:w-9/12 xl:w-7/12 px-3 mb-6 md:mb-0 mr-auto">
-                            <h5 class="text-lg font-bold mb-3">Judul Berita</h5>
-                            <p class="text-gray-500 mb-6">
-                                <small>Published <u>13.01.2022</u></small>
-                            </p>
-                            <p class="text-gray-500">
-                                Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                                placerat vulputate. Ut vulputate est non quam dignissim
-                                elementum. Donec a ullamcorper diam.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-wrap mb-6">
-                        <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
-                            <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                                <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" class="w-full" alt="Louvre" />
-                                <a href="#!">
+                    @if ($newss->count())
+                        @foreach ($newss as $news )
+                        <div class="flex flex-wrap mb-6">
+                            <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
+                                <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                    <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" class="w-full" alt="Louvre" />
                                     <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                </a>
+                                </div>
+                            </div>
+                            <div class="grow-0 shrink-0 basis-auto w-full md:w-9/12 xl:w-7/12 px-3 mb-6 md:mb-0 mr-auto">
+                                <h5 class="text-lg font-bold mb-3 truncate">{{ $news->title }}</h5>
+                                <p class="text-gray-500 mb-2">
+                                    <small>Published <u>{{ $news->created_at->diffForHumans() }}</u></small>
+                                </p>
+                                <p class="text-gray-500 truncate mb-3">
+                                    {{ $news->excerpt }}
+                                </p>
+                                <a href="/news/{{ $news->slug }}" class="text-sm text-gray-500"> <u>Baca Lebih Lengkap...</u></a>
                             </div>
                         </div>
-
-                        <div class="grow-0 shrink-0 basis-auto w-full md:w-9/12 xl:w-7/12 px-3 mb-6 md:mb-0 mr-auto">
-                            <h5 class="text-lg font-bold mb-3">Judul Berita</h5>
-                            <p class="text-gray-500 mb-6">
-                                <small>Published <u>13.01.2022</u></small>
-                            </p>
-                            <p class="text-gray-500">
-                                Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                                placerat vulputate. Ut vulputate est non quam dignissim
-                                elementum. Donec a ullamcorper diam.
-                            </p>
-                        </div>
-                    </div>
-
+                        @endforeach
+                    
+                    @endif
+                    
                     <!-- Pagination -->
                     <section class="my-12">
                         <div class="container">
