@@ -7,15 +7,17 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],
+  darkMode: 'class',
   theme: {
+    colors:{
+      'batik' : '#ea580c',
+      'almet' : '#1d4ed8',
+    },
     container:{
       center: true,
       padding: "16px",
     },
     extend: {
-      color:{
-        utama: "#ea580c",
-      },
       screens:{
         "2xl" : "1320px"
       }
