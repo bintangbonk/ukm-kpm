@@ -5,7 +5,8 @@ module.exports = {
     "./resources/**/*.js",
     "./resources/**/*.vue",
     "./node_modules/flowbite/**/*.js",
-    "./node_modules/tw-elements/dist/js/**/*.js"
+    "./node_modules/tw-elements/dist/js/**/*.js",
+    './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php'
   ],
   darkMode: 'class',
   theme: {
