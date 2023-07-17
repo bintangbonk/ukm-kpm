@@ -12,8 +12,9 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 
-    <!-- CK-Editor -->
-    <script src="../asset/ckeditor/ckeditor.js"></script>
+    <!-- Trix-Editor -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
 </head>
 
 <body>
@@ -55,12 +56,12 @@
                                     alt="user photo">
                             </button>
                         </div>
+
                         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600 px-10"
                             id="dropdown-user">
                             <div class="px-4 py-3" role="none">
                                 <p class="text-sm text-gray-900 dark:text-white" role="none">
                                     Hi,
-                                    
                                 </p>
                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
                                     UKM Koprs Protokoler UNISMA
@@ -73,9 +74,15 @@
                                         role="menuitem">Dashboard</a>
                                 </li>
                                 <li>
-                                    <a href="logout.php"
+                                    <form action="/logout" method="post">
+                                        @csrf
+                                        <button type="submit"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white">
+                                            <i class="bi bi-box-arrow-right"></i>Sign Out</button>
+                                    </form>
+                                    {{-- <a href="logout.php"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                        role="menuitem">Sign out</a>
+                                        role="menuitem">Sign out</a> --}}
                                 </li>
                             </ul>
                         </div>
@@ -103,7 +110,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="blog.php"
+                    <a href="/dashboard/berita-acara"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                         <svg aria-hidden="true"
                             class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"

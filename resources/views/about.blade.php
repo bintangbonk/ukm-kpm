@@ -7,7 +7,9 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <div class="relative mt-10">
-                        <img src="asset/img/Solocew2-almet-nonbg.png" alt="" class="mx-auto max-w-full" />
+                        <img src="asset/img/Solocew2-almet-nonbg1.png" alt="" class="mx-auto max-w-full dark:hidden" />
+                        <img src="asset/img/Solocew2-almet-nonbg.png" alt=""
+                            class="hidden dark:block mx-auto max-w-full" />
                     </div>
                 </div>
                 <div class="w-full self-center px-4 lg:w-1/2">
@@ -48,7 +50,7 @@
     <!-- About Tabs -->
     <section class="mb-16">
         <div class="container ">
-            <div class="mb-4 border-b border-gray-200 dark:border-gray-700 px-8">
+            <div class="mb-4 border-b px-8">
                 <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab"
                     data-tabs-toggle="#myTabContent" role="tablist">
                     <li class="mr-2" role="presentation">
@@ -115,14 +117,14 @@
     <section class="mb-16">
         <div class="container ">
             <div class="w-full px-4 pt-24">
-                <div class="max-w-xl mx-auto text-center mb-10 relative" >
+                <div class="max-w-xl mx-auto text-center mb-10 relative">
                     <h2 class="font-bold text-dark text-3xl mb-4">Divisi Organisasi</h2>
                     <p class="font-medium text-md text-basic">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Perferendis eligendi illum totam quos excepturi eius?
                     </p>
-                    <span class="absolute bottom-0 -translate-y-1 -z-10 scale-50 ">
-                        <svg class="" width="234" height="230" viewBox="0 0 234 230" fill="none"
+                    <span class="absolute bottom-0 -translate-y-1 -z-10 scale-50 dark:hidden">
+                        <svg width="234" height="230" viewBox="0 0 234 230" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0_2_34" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="29"
                                 y="30" width="176" height="171">
@@ -178,6 +180,66 @@
                                     transform="rotate(26.2721 243.254 46.3667)" fill="#EA580C" fill-opacity="0.7" />
                                 <rect x="250.685" y="50.0345" width="5.91894" height="234.649"
                                     transform="rotate(26.2721 250.685 50.0345)" fill="#EA580C" fill-opacity="0.7" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="absolute bottom-0 -translate-y-1 -z-10 scale-50 hidden dark:block ">
+                        <svg width="234" height="230" viewBox="0 0 234 230" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_4_9" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="29"
+                                y="29" width="176" height="171">
+                                <ellipse cx="117.282" cy="114.603" rx="88.4882" ry="84.1248"
+                                    transform="rotate(26.2721 117.282 114.603)" fill="#1E40AF" fill-opacity="0.7" />
+                            </mask>
+                            <g mask="url(#mask0_4_9)">
+                                <rect x="79.7822" y="-34.7482" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 79.7822 -34.7482)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="87.2127" y="-31.0802" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 87.2127 -31.0802)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="94.6432" y="-27.4124" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 94.6432 -27.4124)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="102.074" y="-23.7444" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 102.074 -23.7444)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="109.504" y="-20.0765" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 109.504 -20.0765)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="116.935" y="-16.4087" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 116.935 -16.4087)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="124.365" y="-12.7407" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 124.365 -12.7407)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="131.796" y="-9.07288" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 131.796 -9.07288)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="139.227" y="-5.40491" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 139.227 -5.40491)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="146.657" y="-1.73706" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 146.657 -1.73706)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="154.088" y="1.93079" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 154.088 1.93079)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="161.518" y="5.59875" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 161.518 5.59875)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="168.949" y="9.2666" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 168.949 9.2666)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="176.379" y="12.9346" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 176.379 12.9346)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="183.81" y="16.6024" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 183.81 16.6024)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="191.24" y="20.2704" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 191.24 20.2704)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="198.671" y="23.9382" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 198.671 23.9382)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="206.101" y="27.6062" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 206.101 27.6062)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="213.532" y="31.274" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 213.532 31.274)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="220.962" y="34.942" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 220.962 34.942)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="228.393" y="38.6099" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 228.393 38.6099)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="235.824" y="42.2777" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 235.824 42.2777)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="243.254" y="45.9457" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 243.254 45.9457)" fill="#1E40AF" fill-opacity="0.7" />
+                                <rect x="250.685" y="49.6135" width="5.91894" height="234.649"
+                                    transform="rotate(26.2721 250.685 49.6135)" fill="#1E40AF" fill-opacity="0.7" />
                             </g>
                         </svg>
                     </span>

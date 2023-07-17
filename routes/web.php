@@ -1,7 +1,11 @@
 <?php
 
-use App\Http\Controllers\NewsController;
+use App\Models\News;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardNewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,37 +19,52 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home',[
-        "title" => "UKM Korps Protokoler Mahasiswa Universitas Islam Malang"
+    return view('home', [
+        "title" => "UKM Korps Protokoler Mahasiswa Universitas Islam Malang",
+        "newss" => News::latest()->paginate(3)->withQueryString()
     ]);
 });
 
 Route::get('/about', function () {
-    return view('about',[
+    return view('about', [
         "title" => "Tentang - UKM Korps Protokoler Mahasiswa Universitas Islam Malang"
     ]);
 });
 
 Route::get('/gallery', function () {
-    return view('galery',[
+    return view('galery', [
         "title" => "Galeri Foto - UKM Korps Protokoler Mahasiswa Universitas Islam Malang"
     ]);
 });
 
 // Sort Data All News
-Route::get('/news',[NewsController::class,'index']);
+Route::get('/news', [NewsController::class, 'index']);
 
 // Route Single News
-Route::get('/news/{news:slug}',[NewsController::class,'show']);
+Route::get('/news/{news:slug}', [NewsController::class, 'show']);
 
 
 
 // Admin Section
 
-Route::get('/admin',function(){
+Route::get('/admin', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/login',function(){
-    return view('admin.login');
-});
+// Login Section
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+// Logout
+Route::post('/logout', [LoginController::class, 'logout']);
+
+
+// Dashboard
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+})->middleware('auth');
+
+// Dashboard - Berita Acara
+Route::resource('/dashboard/berita-acara', DashboardNewsController::class)->middleware('auth');
+
+Route::get('/dashboard/post/checkSlug', [DashboardPostController::class])->middleware('auth');

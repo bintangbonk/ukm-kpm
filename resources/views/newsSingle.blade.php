@@ -14,17 +14,27 @@
                                 <img src="https://source.unsplash.com/500x500" alt="">
                             </div>
                             <div class="">
-                                <div class="flex flex-wrap justify-between">
+                                <div class="flex flex-wrap">
                                     <div class="item-detail">
-                                        Author
+                                        <div
+                                            class="py-1 px-4 mb-5 rounded-lg outline outline-batik text-batik dark:text-almet dark:outline-almet mr-5">
+                                            Author : Admin</div>
                                     </div>
                                     <div class="item-detail">
-                                        Post At 
+                                        <div
+                                            class="py-1 px-4 mb-5 rounded-lg outline outline-batik text-batik dark:text-almet dark:outline-almet mr-5">
+                                            Post At : {{ $news->created_at }}</div>
+                                    </div>
+                                    <div class="item-detail">
+                                        <div
+                                            class="py-1 px-4 mb-5 rounded-lg hover:outline hover:outline-batik text-batik dark:text-almet dark:hover:outline-almet mr-5">
+                                            <a href="/news"> <u>Kembali ke halaman sebelumnya</u> </a></div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="/news" class="my-10">Back to News list</a>
-                            {!! $news->body !!}
+                            <div class="leading-relaxed font-semibold text-md text-justify">
+                                {!! $news->body !!}
+                            </div>
                         </article>
                     </section>
                 </div>
