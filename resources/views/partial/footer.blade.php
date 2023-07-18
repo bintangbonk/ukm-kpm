@@ -2,7 +2,16 @@
 <footer class="bg-slate-700 pt-24 pb-12 fixed-bottom bg-gray-800">
     <div class="container">
         <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 md:w-1/3">
+                <div class="h-[250px] w-full">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.59941405852!2d112.60422637397929!3d-7.936837479044385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788211bc384919%3A0xdd8bda6f37230a4f!2sIslamic%20University%20of%20Malang!5e0!3m2!1sen!2sid!4v1689659747088!5m2!1sen!2sid"
+                    class="h-full w-full" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
             <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+
                 <h2 class="font-bold text-4xl text-batik dark:text-almet mb-3">UKM Korps Protokoler Mahasiswa</h2>
                 <h3 class="font-bold text-2xl mb-2 text-white">Universitas Islam Malang</h3>
                 <p class="text-white">email@gmail.com</p>
@@ -10,25 +19,17 @@
 
             </div>
             <div class="w-full px-4 mb-12 md:w-1/3">
-                <h3 class="font-semibold text-xl text-batik dark:text-almet mb-5">Tentang Kami</h3>
-                <hr class="my-3">
-                <p class="text-white mt-3 text-justify">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sequi tempora asperiores accusamus
-                    nam
-                    adipisci non, tempore veniam beatae unde aliquid ducimus voluptatibus? Quae, tempore.
-                </p>
-
-            </div>
-            <div class="w-full px-4 mb-12 md:w-1/3">
                 <h3 class="font-semibold text-xl text-batik dark:text-almet mb-5">Link</h3>
                 <ul class="text-slate-300">
                     <li class=""><a href="#"
-                            class="inline-block text-base text-white hover:text-batik dark:hover:text-almet mb-3">Beranda</a></li>
+                            class="inline-block text-base text-white hover:text-batik dark:hover:text-almet mb-3">Beranda</a>
+                    </li>
                     <li class=""><a href="#"
                             class="inline-block text-base text-white hover:text-batik dark:hover:text-almet mb-3">Tentang
                             Kami</a></li>
                     <li class=""><a href="#"
-                            class="inline-block text-base hover:text-batik dark:hover:text-almet mb-3 text-white">Galeri</a></li>
+                            class="inline-block text-base hover:text-batik dark:hover:text-almet mb-3 text-white">Galeri</a>
+                    </li>
                     <li class=""><a href="#"
                             class="inline-block text-base text-white hover:text-batik dark:hover:text-almet mb-3">Berita
                             Acara</a></li>
@@ -58,7 +59,8 @@
                 </div>
             </div>
         </div>
-        <p class="font-medium text-sm text-slate-500 text-center mt-5 text-white">Copyright 2023, UKM Korps Protokoler Universitas
+        <p class="font-medium text-sm text-slate-500 text-center mt-5 text-white">Copyright 2023, UKM Korps Protokoler
+            Universitas
             Islam Malang</p>
     </div>
 </footer>
@@ -73,5 +75,3 @@
 <script>
     AOS.init();
 </script>
-
-

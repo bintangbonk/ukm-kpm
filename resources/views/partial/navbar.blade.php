@@ -47,7 +47,7 @@
                                 </label>
                                 <span class="hidden lg:block">
                                     <span class="text-base font-bold pl-4 dark:hidden">Batik</span>
-                                    <span class="hidden text-base font-bold pl-4 dark:block ">Almamater</span>
+                                    <span class="hidden text-base font-bold pl-4 dark:block ">Keprotokoleran</span>
                                 </span>
                             </div>
                         </li>

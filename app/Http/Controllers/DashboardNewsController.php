@@ -31,10 +31,14 @@ class DashboardNewsController extends Controller
      */
     public function store(Request $request)
     {
+        
+        return $request->file('image')->store('news-image');
+
         $validatedData = $request->validate([
             'title' => 'required|max:255',
             'slug' => 'required|unique:news',
-            'body' => 'required'
+            'body' => 'required',
+            'image' => 'image|file|max:5120' 
         ]);
 
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body, 200));

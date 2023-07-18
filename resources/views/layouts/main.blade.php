@@ -21,6 +21,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap');
     </style>
 
+    <link href="../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -34,9 +35,14 @@
     @extends('partial.footer')
 
     {{-- Back to Top --}}
-    <a href="#home" class="h-14 w-14 bg-orange-600 dark:bg-blue-700 rounded-full bottom-4 right-4 fixed z-[999] p-4 hover:animate-pulse" id="#to-top">
+    <a href="#home"
+        class="h-14 w-14 bg-orange-600 dark:bg-blue-700 rounded-full bottom-4 right-4 fixed z-[999] p-4 hover:animate-pulse"
+        id="#to-top">
         <i class='bx bx-up-arrow text-2xl font-bold text-white -translate-y-1'></i>
     </a>
+
+    {{-- Light Box --}}
+    <script src="../node_modules/lightbox2/dist/js/lightbox.js"></script>
 </body>
 
 </html>

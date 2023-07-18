@@ -10,7 +10,7 @@
                     </h1>
                 </div>
 
-                <form action="/dashboard/berita-acara" method="POST">
+                <form action="/dashboard/berita-acara" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-6 ">
                         <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Judul
@@ -31,6 +31,18 @@
                         @error('slug')
                             {{ $message }}
                         @enderror
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="image">Upload
+                            file</label>
+                        <input
+                            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                            aria-describedby="file_input_help" id="image" type="file" name="image">
+                            @error('image')
+                                {{ $message }}
+                            @enderror
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">Max Size 5 MB</p>
                     </div>
                     <div class="mb-6">
                         <label for="body" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isi
