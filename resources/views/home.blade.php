@@ -588,45 +588,5 @@
             </div>
         </div>
     </section>
-    <!-- Galeri -->
-    <section id="galeri" class="pt-36 pb-16">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-right" data-aos-duration="800">
-                    <h2
-                        class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl hover:text-batik dark:hover:text-almet">
-                        Galeri Foto</h2>
-                    <p class="font-medium text-md text-basic md:text-lg">Lorem, ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit.
-                        Perferendis eligendi illum totam quos excepturi eius?</p>
-                </div>
-                <hr class="my-3">
-                <div class="grid lg:grid-cols-3 gap-4" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="rounded-xl shadow-xl overflow-hidden ">
-                        <a href="asset/img/divisiA.jpg" class="" data-lightbox="divisiA" data-title="Caption">
-                            <img src="asset/img/divisiA.jpg" alt="" class="w-full hover:blur-sm">
-                        </a>
-                    </div>
-                    <div class="rounded-xl shadow-xl overflow-hidden ">
-                        <a href="asset/img/divisiB.jpg" class="" data-lightbox="divisiA" data-title="Caption">
-                            <img src="asset/img/divisiA.jpg" alt="" class="w-full hover:blur-sm">
-                        </a>
-                    </div>
-                    <div class="rounded-xl shadow-xl overflow-hidden ">
-                        <a href="asset/img/divisiC.jpg" class="" data-lightbox="divisiA" data-title="Caption">
-                            <img src="asset/img/divisiA.jpg" alt="" class="w-full hover:blur-sm">
-                        </a>
-                    </div>
-
-                </div>
-                <div class="mt-16 text-center justify-center">
-                    <a href="/gallery"
-                        class="py-2 px-4 font-bold text-white bg-batik dark:bg-almet hover:opacity-70 mt-10 text-center rounded-xl">Lihat
-                        lebih banyak </a>
-
-                </div>
-            </div>
-    </section>
 
 @endsection
