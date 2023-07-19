@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-16 lg:pt-16">
+    <section id="home" class="pt-32 pb-16">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class=" relative w-full self-center px-4 lg:w-1/2 " data-aos="fade-right" data-aos-duration="800">
@@ -13,19 +13,6 @@
                     <p class="leading-relaxed">Unit Kreatifitas Mahasiswa Korps Protokoler Mahasiswa adalah salah satu UKM
                         yang ada di Universitas Islam Malang dan biasa dikenal dengan DUTA KAMPUS UNISMA. UKM KPM ini
                         bergerak di tiga bidang yakni Kehumasan, Keprotokoleran dan kedutaan</p>
-
-
-                    {{-- <h1 class="text-xl font-extrabold text-batik dark:text-almet">
-                        Unit Kreativitas Mahasiswa
-                        <span class="block font-bold text-4xl text-black ">Korps Protokoler Mahasiswa</span>
-                    </h1>
-                    <h2 class="font-bold text-slate-600 text-xl mb-5">
-                        Universitas Islam Malang
-                    </h2>
-                    <p class="leading-relaxed font-medium text-lg"> Unit Kreatifitas Mahasiswa Korps Protokoler Mahasiswa
-                        adalah salah satu UKM yang ada di Universitas Islam Malang dan biasa dikenal dengan DUTA KAMPUS
-                        UNISMA. UKM KPM ini bergerak di tiga bidang yakni Kehumasan, Keprotokoleran dan kedutaan
-                    </p> --}}
                     {{-- Batik --}}
                     <span class="dark:hidden absolute top-0 -z-10 right-0 scale-50 -translate-y-32 hover:skew-x-6">
                         <svg width="234" height="230" viewBox="0 0 234 230" fill="none"
@@ -154,10 +141,10 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2" data-aos="fade-up-left" data-aos-duration="1000">
                     <div class="relative">
-                        <img src="asset/img/grub-batik-nonbg.png" alt="UKM KPM"
-                            class="max-w-full mx-auto hover:translate-x-2 transition ease-out dark:hidden">
-                        <img src="asset/img/grub-almet-nonbg.png" alt="UKM KPM"
-                            class="hidden max-w-full mx-auto hover:translate-x-2 transition ease-out dark:block scale-95">
+                        <img src="asset/img/barengbatik-min.png" alt="UKM KPM"
+                            class="scale-125 max-w-full mx-auto hover:translate-x-2 transition ease-out dark:hidden">
+                        <img src="asset/img/Bersama-min.png" alt="UKM KPM"
+                            class="scale-125 hidden max-w-full mx-auto hover:translate-x-2 transition ease-out dark:block">
                         {{-- Batik --}}
                         <span class="absolute top-36 translate-x-40 -z-10 -translate-y-32 scale-150 dark:hidden ">
                             <svg class="" width="90" height="90" viewBox="0 0 90 90" fill="none"
@@ -272,7 +259,7 @@
                         Unit Kreatifitas Mahasiswa Korps Protokoler Mahasiswa adalah salah satu UKM yang ada di Universitas
                         Islam Malang dan biasa dikenal dengan DUTA KAMPUS UNISMA , karena di UKM KPM ini juga bergerak di
                         kedutaan ,Tetapi tidak hanya kedutaan ,UKM KPM ini bergerak dalam bidang Keprotokoleran ,
-                        Kemahasiswaan dan Kedutaan , jadi tidak hanya duta kampus saja< </p>
+                        Kemahasiswaan dan Kedutaan , jadi tidak hanya duta kampus saja </p>
                             <!-- Social Media -->
                             <div class="flex">
                                 <div id="media-social" class="pt-2 text-4xl">
@@ -374,7 +361,7 @@
                 <!-- Modal header -->
                 <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                        Bagian Keprotokolan
+                        Bidang Keprotokolan
                     </h3>
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -390,7 +377,10 @@
                 <!-- Modal body -->
                 <div class="p-6 space-y-6">
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, cum obcaecati ab facere omnis nemo cupiditate quaerat dolorum delectus unde dolorem? Vero autem explicabo vel quo recusandae, placeat aliquam nisi adipisci inventore, fuga molestiae magni suscipit fugiat odit voluptas pariatur? In similique iure, consequatur nesciunt cumque nobis reprehenderit fuga molestiae.
+                        Bidang keprotokolan meliputi bagaimana cara seorang duta dalam mengatur serangkaian kegiatan yang
+                        berkaitan dengan aturan dalam acara kenegaraan atau acara resmi dalam lingkup universitas yang
+                        meliputi Tata Tempat, Tata Upacara, dan Tata Penghormatan sebagai bentuk penghormatan kepada
+                        seseorang sesuai dengan jabatan dan/atau kedudukannya dalam negara,
                     </p>
                 </div>
             </div>
@@ -404,7 +394,7 @@
                 <!-- Modal header -->
                 <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                        Bagian Kehumasan
+                        Bidang Kehumasan
                     </h3>
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -420,7 +410,10 @@
                 <!-- Modal body -->
                 <div class="p-6 space-y-6">
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque excepturi iure eaque hic distinctio ab corporis omnis. Nemo quo consequuntur, sunt, modi quis ullam harum similique earum molestiae voluptatibus dignissimos saepe architecto. Doloribus, perspiciatis! Laboriosam quis quam, ad expedita atque asperiores deserunt rem non porro reiciendis, quod, accusamus minima rerum.
+                        Bidang kehumas atau hubungan masyarakat dikenal sebagai bagian dari organisasi yang bertugas
+                        berkomunikasi dengan publik, baik berupa komunikasi satu arah atau dua arah. Kehumasan adalah bagian
+                        dari kajian ilmu komunikasi yang dipelajari dan diterapkan dalam seluruh kegiatan duta kampus
+                        unisma.
                     </p>
                 </div>
             </div>
@@ -434,7 +427,7 @@
                 <!-- Modal header -->
                 <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                        Bagian Kedutaan
+                        Bidang Kedutaan
                     </h3>
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -450,7 +443,9 @@
                 <!-- Modal body -->
                 <div class="p-6 space-y-6">
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia eveniet harum, nobis saepe consequatur tempora rerum nemo, doloribus unde dignissimos nihil non beatae adipisci ut! Vel numquam eum vero minima sequi tempore pariatur excepturi impedit repudiandae. Reiciendis minus perspiciatis id eius mollitia earum placeat quia, incidunt veniam, optio perferendis blanditiis.
+                        Bidang kedutaan adalah Bidang yang selalu diterapkan di dalam UKM Korps Protokoler dalam
+                        menjalanakan setiap kegiatan. Bagaimana kita sebagai duta kampus bisa menjadi representasi dari
+                        mahasiswa lain yang ada di Universitas Islam Malang
                     </p>
                 </div>
             </div>
@@ -461,95 +456,77 @@
     <section class="pt-32 pb-16">
         <div class="container">
             <div class="flex flex-wrap">
+                @if ($newss->count())
                 <div class="w-full py-4 lg:w-9/12">
                     <h3 class="text-4xl font-bold mb-5">Berita Acara</h3>
                     <a href="#" class="flex flex-col items-center rounded-lg shadow md:flex-row w-full">
-                        <img class="object-cover rounded-lg w-96" src="asset/img/divisiA.jpg" alt="">
+                        <img class="object-cover rounded-lg w-56" src="asset/img/{{ $newss[0]->image }}" alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Lorem ipsum,
-                                dolor sit amet consectetur adipisicing.</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Possimus, ipsum eaque perferendis pariatur consequatur quas
-                                dignissimos ducimus accusantium aliquam porro!</p>
-                            <small>Author : Admin, Post at : 18 july 2023</small>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{$newss[0]->title}}</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                {{ $newss[0]->excerpt }}
+                            </p>
+                            <small>Author : Admin, Post at : {{ $newss[0]->created_at }}</small>
                         </div>
                     </a>
                     <div class="flex mt-5">
                         <div class="w-full lg:w-4/12 mt-3 mr-1 ">
                             <div class="max-w-sm bg-white rounded-lg px-1 w-full">
                                 <a href="#">
-                                    <img class="rounded-lg w-full" src="/asset/img/divisiB.jpg" alt="" />
+                                    <img class="rounded-lg w-full h-44 object-cover" src="/asset/img/{{ $newss[1]->image }}" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
                                         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 truncate">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                            {{ $newss[1]->title }}</h5>
                                     </a>
-                                    <small>Author : Admin, Post at : 18 july 2023</small>
+                                    <small>Author : Admin, Post at : {{ $newss[1]->created_at }}</small>
                                 </div>
                             </div>
                         </div>
                         <div class="w-full lg:w-4/12 mt-3 mr-1">
                             <div class="max-w-sm bg-white rounded-lg px-1 w-full">
                                 <a href="#">
-                                    <img class="rounded-lg w-full" src="/asset/img/divisiB.jpg" alt="" />
+                                    <img class="rounded-lg w-full h-44 object-cover" src="/asset/img/{{ $newss[2]->image }}" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
                                         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 truncate">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                            {{ $newss[2]->title }}.</h5>
                                     </a>
-                                    <small>Author : Admin, Post at : 18 july 2023</small>
+                                    <small>Author : Admin, Post at : {{ $newss[2]->created_at }}</small>
                                 </div>
                             </div>
                         </div>
                         <div class="w-full lg:w-4/12 mt-3 mr-1">
                             <div class="max-w-sm bg-white rounded-lg px-1 w-full">
                                 <a href="#">
-                                    <img class="rounded-lg w-full" src="/asset/img/divisiB.jpg" alt="" />
+                                    <img class="rounded-lg w-full h-44 object-cover" src="/asset/img/{{ $newss[3]->image }}" alt="" />
                                 </a>
                                 <div class="p-5">
                                     <a href="#">
                                         <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 truncate">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                            {{ $newss[3]->title }}</h5>
                                     </a>
-                                    <small>Author : Admin, Post at : 18 july 2023</small>
+                                    <small>Author : Admin, Post at : {{ $newss[3]->created_at }}</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endif
                 <div class="w-full px-4 lg:w-3/12 relative">
                     <div class="w-full h-full rounded-3xl flex flex-col justify-center items-start px-4 bg-gray-200">
+                        @foreach ($newss->skip(4) as $news )             
                         <div
                             class="px-4 py-3 hover:bg-batik dark:hover:bg-almet hover:text-white font-semibold rounded-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt atque inventore itaque
-                            deleniti incidunt.
+                            <a href="#"><p class="leading-relaxed underline"> {{ $news->title }}</p></a>
                         </div>
-                        <div
-                            class="px-4 py-3 hover:bg-batik dark:hover:bg-almet hover:text-white font-semibold rounded-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt atque inventore itaque
-                            deleniti incidunt.
-                        </div>
-                        <div
-                            class="px-4 py-3 hover:bg-batik dark:hover:bg-almet hover:text-white font-semibold rounded-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt atque inventore itaque
-                            deleniti incidunt.
-                        </div>
-                        <div
-                            class="px-4 py-3 hover:bg-batik dark:hover:bg-almet hover:text-white font-semibold rounded-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt atque inventore itaque
-                            deleniti incidunt.
-                        </div>
-                        <div
-                            class="px-4 py-3 hover:bg-batik dark:hover:bg-almet hover:text-white font-semibold rounded-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt atque inventore itaque
-                            deleniti incidunt.
-                        </div>
+                        @endforeach
                     </div>
                     <a href="/news">
                         <span
-                            class="absolute top-0 py-2 px-4 bg-batik text-white dark:bg-almet rounded-2xl right-0 -translate-y-8"><i
+                            class="absolute top-0 py-2 px-4 bg-batik text-white dark:bg-almet rounded-2xl right-0 -translate-y-7 hover:border hover:bg-white hover:text-batik hover:border-batik dark:hover:text-almet dark:hover:bg-white dark:hover:border-almet"><i
                                 class='bx bx-news mr-1'></i>Semua Berita</span>
                     </a>
                 </div>
@@ -557,8 +534,21 @@
             </div>
         </div>
     </section>
+
+    <!-- Galery -->
+    <div class="section pt-32 pb-16">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2">
+                    <!-- Carousel Photo -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Pendaftaran -->
-    <section id="event" class="pt-12 pb-24">
+    {{-- <section id="event" class="pt-12 pb-24">
         <div class="container">
             <div class="flex flex-wrap">
 
@@ -587,6 +577,5 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> --}}
 @endsection

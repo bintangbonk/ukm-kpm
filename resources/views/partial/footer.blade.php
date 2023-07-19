@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-slate-700 pt-24 pb-12 fixed-bottom bg-gray-800">
+<footer class="bg-slate-700 pt-24 pb-4 fixed-bottom bg-gray-800">
     <div class="container">
         <div class="flex flex-wrap">
             <div class="w-full px-4 mb-12 md:w-1/3">

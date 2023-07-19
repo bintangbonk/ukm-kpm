@@ -24,7 +24,7 @@
     <link href="../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="relative">
     {{-- Navbar --}}
     @extends('partial.navbar')
 

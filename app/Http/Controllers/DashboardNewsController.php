@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class DashboardNewsController extends Controller
 {
@@ -31,14 +32,12 @@ class DashboardNewsController extends Controller
      */
     public function store(Request $request)
     {
-        
-        return $request->file('image')->store('news-image');
 
         $validatedData = $request->validate([
             'title' => 'required|max:255',
             'slug' => 'required|unique:news',
+            'image' => 'required', 
             'body' => 'required',
-            'image' => 'image|file|max:5120' 
         ]);
 
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body, 200));
@@ -98,5 +97,11 @@ class DashboardNewsController extends Controller
     {
         News::destroy($news->id);
         return redirect('/dashboard/berita-acara')->with('success','Berita acara telah dihapus');
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(News::class, 'slug', $request->title);
+        return response()->json(['slug'=>$slug]);
     }
 }

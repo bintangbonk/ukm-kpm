@@ -14,7 +14,7 @@ class NewsController extends Controller
     {
         return view('news',[
             "title" => "Berita Acara - UKM Korps Protokoler Mahasiswa Universitas Islam Malang",
-            "newss" => News::latest()->paginate(4)->withQueryString()
+            "newss" => News::paginate(4)->withQueryString()
         ]);
     }
 

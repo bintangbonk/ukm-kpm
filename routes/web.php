@@ -1,11 +1,14 @@
 <?php
 
 use App\Models\News;
+use App\Models\Anggota;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardNewsController;
+use App\Http\Controllers\DashboardAnggotaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +24,7 @@ use App\Http\Controllers\DashboardNewsController;
 Route::get('/', function () {
     return view('home', [
         "title" => "UKM Korps Protokoler Mahasiswa Universitas Islam Malang",
-        "newss" => News::latest()->paginate(3)->withQueryString()
+        "newss" => News::all()
     ]);
 });
 
@@ -67,4 +70,7 @@ Route::get('/dashboard', function () {
 // Dashboard - Berita Acara
 Route::resource('/dashboard/berita-acara', DashboardNewsController::class)->middleware('auth');
 
-Route::get('/dashboard/post/checkSlug', [DashboardPostController::class])->middleware('auth');
+Route::get('/dashboard/berita-acara/checkSlug', [DashboardPostController::class])->middleware('auth');
+
+// Dashboard - Anggota
+

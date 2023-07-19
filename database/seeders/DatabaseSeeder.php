@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //faker News
-        \App\Models\News::factory(10)->create();
+        // \App\Models\News::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
